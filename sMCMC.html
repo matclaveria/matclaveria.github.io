@@ -8,18 +8,38 @@ table.center {
   margin-left: auto; 
   margin-right: auto;
 }	
+
+
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+
+
 </style>
 </head>
 <title> Ruben Claveria - University of Cambridge</title>
 </head>
 <body>
+
+<a href="index.html" class="button">Back to main site</a>
+
 <h1>A sequential framework for music restoration</h1> 
 <br><table border="0" width="100%">
 
-
 <hr>
+<p>Building upon Gabor regression models intended for batch inference, we represent the evolution of synthesis coefficients over time in terms of a state-space model amenable to Bayesian filtering strategies. Rather than utilising off-the-shelf particle filters, we exploit the probabilistic structure of the modified model to derive exact Gibbs updates for the parameters within each state. Thus, sequential inference is carried out by means of sequential Markov Chain Monte Carlo (also known as MCMC-Particle filter) plus a rejuvenating move to ensure particle diversity. As an exploratory test for the framework's potential, we employ the proposed sequential Markov Chain Monte Carlo algorithm to analyse three degraded audio signals.</p>
 
-
+<p>See draft <a href="pdfs/audio_sMCMC.pdf" target="_blank">here</a>.</p>
+<hr>
 
 
 <h2>Results on three musical examples</h2>

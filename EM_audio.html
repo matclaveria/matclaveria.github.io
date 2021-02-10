@@ -1,0 +1,112 @@
+<html>
+<head> 
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}	
+
+
+.button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+</style>
+</head>
+<title> Ruben Claveria - University of Cambridge</title>
+</head>
+<body>
+
+<a href="index.html" class="button">Back to main site</a>
+
+<h1>An EM algorithm for variable selection and coefficient estimation in audio reconstruction</h1> 
+<br><table border="0" width="100%">
+
+
+<hr>
+<p>Relying on a conjugate mixture prior formulation that allows for closed-form Expectation-maximization updates, we propose here a framework to perform efficient joint variable selection and coefficient estimation in time-frequency dictionaries (such as Gabor frames) under problem-specific prior constraints---namely, structured \emph{a priori} variable inclusion probabilities intended to reflect the typical time-frequency persistence patterns found in audio signals, and heavy-tailed priors on synthesis coefficients aimed at capturing the wide range of values expected in non-stationary processes. Applications to audio denoising, missing data interpolation and transient identification are presented.</p>
+
+
+<p>See draft <a href="pdfs/IEEE_EMVS_for_audio.pdf" target="_blank">here</a>.</p>
+
+<hr>
+
+<h2>Results of the EM algorithm on missing data interpolation</h2>
+
+ <table style="width:100%" >
+  <tr align="center">
+    <th>Example</th>
+    <th> % missing</th>
+	<th>Clean source</th>
+    <th>Input file</th>
+	<th>Output (unstructured)</th>
+	<th>Output (1 layer Markov chain)</th>
+  </tr>
+  <tr align="center">
+    <td>Glockenspiel</td>
+    <td>38%</td>
+	<td>
+		<audio controls>
+		<source src="audio/EM/missing/glockenspiel_missing_clean.wav" type="audio/wav">
+		Your browser does not support the audio element.
+	</audio>
+	</td>
+    <td>
+		<audio controls>
+		<source src="audio/EM/missing/glockenspiel_missing_input.wav" type="audio/wav">
+		Your browser does not support the audio element.
+	</audio>
+	</td>
+	<td>
+		<audio controls>
+		<source src="audio/EM/missing/glockenspiel_unstruct.wav" type="audio/wav">
+		Your browser does not support the audio element.
+	</audio>
+	<td>
+		<audio controls>
+		<source src="audio/EM/missing/glockenspiel_1L.wav" type="audio/wav">
+		Your browser does not support the audio element.
+	</audio>
+  </tr>
+  <tr align="center">
+    <td>Trumpet</td>
+	<td>38%</td>
+	<td>
+		<audio controls>
+		<source src="audio/EM/missing/trumpet_missing_clean.wav" type="audio/wav">
+		Your browser does not support the audio element.
+	</audio>
+	</td>
+    <td>
+		<audio controls>
+		<source src="audio/EM/missing/trumpet_missing_input.wav" type="audio/wav">
+		Your browser does not support the audio element.
+	</audio>
+	</td>
+	<td>
+		<audio controls>
+		<source src="audio/EM/missing/missing_unstruct_14408_26443.wav" type="audio/wav">
+		Your browser does not support the audio element.
+	</audio>
+	<td>
+		<audio controls>
+		<source src="audio/EM/missing/missing_1L_14408_26443.wav" type="audio/wav">
+		Your browser does not support the audio element.
+	</audio>
+  </tr>
+  
+</table> 
+
+
+</font></body></html>
